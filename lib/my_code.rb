@@ -3,7 +3,7 @@ def map_to_negativize(source_array)
   result_array=[]
 
   source_array.each do |num|
-    result_array<< num*2
+    result_array<< num * -1
   end
 
   result_array
