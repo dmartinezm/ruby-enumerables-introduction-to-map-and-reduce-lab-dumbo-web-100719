@@ -48,13 +48,14 @@ end
 
 def reduce_to_all_true(source_array)
 
-  source_array.each do |placeholder|
-      if (placeholder!= nil || placeholder != false) then
-        return true
-      else
-        return false
-        end
-  end
+  false_count= 0
+
+  false_count=source_array.count(false)+ source_array.count(nil)
+  if false_count>0 then
+    return false
+    else
+    return true
+end
 end
 
 def reduce_to_any_true(source_array)
