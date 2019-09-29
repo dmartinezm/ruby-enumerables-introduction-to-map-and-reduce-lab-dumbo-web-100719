@@ -64,9 +64,10 @@ def reduce_to_any_true(source_array)
 
   true_count=source_array.count(true)
   false_count= source_array.count(nil)+ source_array.count(false)
-  if true_count==0 && false_count>0 then
+  if true_count>0 then
     return true
-    else
+  elsif true_count==0 && false_count>0 then
     return false
+    
 end
 end
