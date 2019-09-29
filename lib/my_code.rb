@@ -41,7 +41,7 @@ def reduce_to_total(source_array, starting_point)
   if starting_point==nil then
     starting_point=0
   end
- odds.each do |placeholder|
+ source_array.each do |placeholder|
       sum+= placeholder
     end
 sum+=starting_point
