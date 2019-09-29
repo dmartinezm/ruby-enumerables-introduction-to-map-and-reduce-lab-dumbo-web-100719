@@ -1,5 +1,12 @@
 # My Code here....
 def map_to_negativize(source_array)
+  result_array=[]
+
+  source_array.each do |num|
+    result_array<< num*2
+  end
+
+  result_array
 end
 def map_to_no_change(source_array)
 end
