@@ -38,6 +38,7 @@ end
 
 def reduce_to_total(source_array, starting_point)
   sum=0
+  result_array=[]
   if starting_point==nil then
     starting_point=0
   end
@@ -45,7 +46,8 @@ def reduce_to_total(source_array, starting_point)
       sum+= placeholder
     end
 sum+=starting_point
-
+result_array<<sum
+result_array
 end
 
 def reduce_to_all_true(source_array)
